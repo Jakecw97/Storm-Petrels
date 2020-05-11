@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel=" icon" href="../static/logo.png" type="favicon/ico"/>
+		<link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
+		<div class="header">
+			<image src="../static/logo.png">
+			<h1 align = center>Storm Petrels Stream</h1>
+		</div>
+	</head>
+	<hr>
+	<a href="/gallery">Gallery</a>  <!--Redirects to the Gallery-->
+	<hr>
+	<div style="clear:both;"></div>
+	<body>
+		<div class="streamDiv">   <!--To add more cameras, add another div below this and add more img's, in a similar format-->
+			<img class="stream" src="{{ url_for('video_feed') }}">
+			<img class="stream" src="{{ url_for('video_feed2') }}"> 
+		</div>
+	</body>
+</html>

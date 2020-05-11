@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Home</title>
+	    <link rel=" icon" href="../static/logo.png" type="favicon/ico"/>
+	    <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
+	    <div class="header">
+	   	<image src="../static/logo.png">
+	    	<h1 align = center>Gallery</h1> 
+	    </div>
+	</head>
+	<hr>
+	<a href="/">Stream</a> <!--Redirects to the index/stream page-->
+	<hr>
+	<body>
+		<div id="galleryDiv">
+			{% for image in images %}    <!--Loops for all images passed in-->
+			<div id="imagesDiv"">
+				<image src="{{ url_for('static', filename='gallery/'+image) }}"></image> <!--Displays image-->
+				<figcaption text="{{ url_for('static', filename='gallery/'+image) }}">{{ image }}</figcaption> <!--Displays the image name at the bottom of the image-->
+			</div>
+			{% endfor %} <!--End of loop-->
+		</div>
+	</body>
+</html>

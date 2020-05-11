@@ -1,0 +1,65 @@
+body {
+  background: #292929;
+  color: #41a8ff;  
+  font-family: Trebuchet MS;
+}
+
+
+.button {
+  width: 150px;
+  background: #046590;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+}
+
+.header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.header h1 {
+  position: relative;
+  color: #41a8ff;
+  font-family: verdana;
+  font-size: 300%;
+}
+.p1 {
+  padding: 1rem;
+}
+
+hr {
+	border: 2px solid #41a8ff;
+}
+
+.center {
+  text-align: center;
+}
+
+.streamDiv {
+  width: 100%;
+}
+.stream {
+  margin:1%;
+  width: 45%;
+}
+.galleryDiv {
+  display: block:
+}
+.imagesDiv{
+	width:25%:
+	display:block;
+}
+figcaption {
+width: 150px
+}
+a{
+	border:3px solid #41a8ff;  
+	color:#41a8ff;
+	padding: 3px;
+	bold;
+	font-weight: bold;
+}
